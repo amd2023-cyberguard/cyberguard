@@ -41,7 +41,7 @@ dict set dict_prj dict_sys ver_hour           [scan [clock format [clock seconds
 dict set dict_prj dict_sys ver_bit            [expr [scan [clock format [clock seconds] -format "%M"] %d]/15]
 
 dict set dict_prj dict_param DPU_IP_FOLDER     {dpu}
-dict set dict_prj dict_param HP_CLK_MHz        {334}
+dict set dict_prj dict_param HP_CLK_MHz        {274}
 dict set dict_prj dict_param DPU_HP_CC_EN      [expr {([dict get $dict_prj dict_param DPU_CLK_MHz]<[dict get $dict_prj dict_param HP_CLK_MHz] )?{0}:{1} }]
 dict set dict_prj dict_param DPU_HP_DATA_BW    [expr {([dict get $dict_prj dict_sys prj_family]=={zynq})?{64}:{128}}]
 dict set dict_prj dict_param DPU_ALU_LEAKYRELU {0}

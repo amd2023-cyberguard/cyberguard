@@ -22,9 +22,9 @@ set dict_prj  {}
 #****************************************************************
 # set project
 #****************************************************************
-dict set dict_prj dict_sys prj_name                  {zcu102}
-dict set dict_prj dict_sys prj_part                  {xczu9eg-ffvb1156-2-i}
-dict set dict_prj dict_sys prj_board                 {zcu102v100}
+dict set dict_prj dict_sys prj_name                  {KR260}
+dict set dict_prj dict_sys prj_part                  {xck26-sfvc784-2LV-c}
+dict set dict_prj dict_sys prj_board                 {KR260}
 
 #****************************************************************
 # set bd
@@ -36,11 +36,11 @@ dict set dict_prj dict_sys bd_ooc                    None
 #****************************************************************
 # set param
 #****************************************************************
-dict set dict_prj dict_param  DPU_CLK_MHz            {325}
+dict set dict_prj dict_param  DPU_CLK_MHz            {275}
 dict set dict_prj dict_param  REG_CLK_MHz            {100}
 
 #The following parameters correspond to Arch Tab of the IP GUI
-dict set dict_prj dict_param  DPU_NUM                {3}
+dict set dict_prj dict_param  DPU_NUM                {1}
 dict set dict_prj dict_param  DPU_ARCH               {4096}
 dict set dict_prj dict_param  DPU_RAM_USAGE          {low}
 dict set dict_prj dict_param  DPU_CHN_AUG_ENA        {1}
@@ -48,14 +48,14 @@ dict set dict_prj dict_param  DPU_SAVE_ARGMAX_ENA    {1}
 dict set dict_prj dict_param  DPU_CONV_RELU_TYPE     {3}
 dict set dict_prj dict_param  DPU_ALU_PARALLEL_USER  {4}
 dict set dict_prj dict_param  DPU_ALU_LEAKYRELU      {0}
-dict set dict_prj dict_param  DPU_SFM_NUM            {1}
+dict set dict_prj dict_param  DPU_SFM_NUM            {0}
 
 #The following parameters correspond to Advanced Tab of the IP GUI
 dict set dict_prj dict_param  DPU_SAXICLK_INDPD      {1}
 dict set dict_prj dict_param  DPU_CLK_GATING_ENA     {1}
 dict set dict_prj dict_param  DPU_DSP48_MAX_CASC_LEN {4}
 dict set dict_prj dict_param  DPU_DSP48_USAGE        {high}
-dict set dict_prj dict_param  DPU_URAM_PER_DPU       {0}
+dict set dict_prj dict_param  DPU_URAM_PER_DPU       {50}
 
 #****************************************************************
 # source tcl
